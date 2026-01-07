@@ -3,6 +3,9 @@
   padding: 0;
   text-decoration: none;
 }
+nav{
+  padding: 10px 5%;
+}
 .navbar{
   background-color:white;
   padding-right: 15px;
