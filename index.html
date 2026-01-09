@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hamburger Menu</title>
+  <title>Day 5</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Hamburger Icon -->
-  <div class="hamburger" id="hamburger">&#9776;</div>
-
-  <!-- Menu -->
-  <div class="menu" id="menu">
-    <a href="#" class="menu-link">Home</a>
-    <a href="#" class="menu-link">About</a>
-    <a href="#" class="menu-link">Profile</a>
-    <a href="#" class="menu-link">Features</a>
-    <a href="#" class="menu-link">Logout</a>
-  </div>
+  
+  <form id="myForm">
+    <div class="input-wrapper">
+      <input 
+        type="text" 
+        id="textInput" 
+        placeholder="Enter text"
+        aria-label="Text input"
+      >
+      <button type="submit" aria-label="Submit">
+        🔍
+      </button>
+    </div>
+    <div id="errorMsg" class="error"></div>
+  </form>
 
   <script src="script.js"></script>
 </body>
