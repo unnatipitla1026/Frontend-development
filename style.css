@@ -1,42 +1,41 @@
-body {
-      margin: 0;
+  body {
       font-family: Arial, sans-serif;
-    }
-    /* Disable scroll */
-body.no-scroll {
-      overflow: hidden;
+      padding: 40px;
     }
 
-/* Hamburger icon */
-.hamburger {
-      font-size: 30px;
+    .input-wrapper {
+      display: flex;
+      max-width: 300px;
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-right: none;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #007bff;
+    }
+
+    button {
+      padding: 10px 14px;
+      font-size: 16px;
       cursor: pointer;
-      padding: 15px;
-    }
-
-/* Menu */
-.menu {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: 250px;
-      height: 100vh;
-      background: #333;
-      padding-top: 60px;
-      transition: left 0.3s ease;
-    }
-
-.menu.active {
-      left: 0;
-    }
-
-.menu a {
-      display: block;
-      padding: 15px;
+      border: 2px solid #007bff;
+      background-color: #007bff;
       color: white;
-      text-decoration: none;
     }
 
-.menu a:hover {
-      background: #444;
+    button:focus {
+      outline: 3px solid #80bdff;
+    }
+
+    .error {
+      color: red;
+      margin-top: 8px;
+      font-size: 14px;
     }
