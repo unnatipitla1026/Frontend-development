@@ -1,14 +1,15 @@
-  body {
+/*Day-5*/
+body {
       font-family: Arial, sans-serif;
       padding: 40px;
     }
 
-    .input-wrapper {
+.input-wrapper {
       display: flex;
       max-width: 300px;
     }
 
-    input {
+input {
       flex: 1;
       padding: 10px;
       font-size: 16px;
@@ -17,11 +18,11 @@
       outline: none;
     }
 
-    input:focus {
+input:focus {
       border-color: #007bff;
     }
 
-    button {
+button {
       padding: 10px 14px;
       font-size: 16px;
       cursor: pointer;
@@ -30,12 +31,54 @@
       color: white;
     }
 
-    button:focus {
+button:focus {
       outline: 3px solid #80bdff;
     }
 
-    .error {
+.error {
       color: red;
       margin-top: 8px;
       font-size: 14px;
+    }
+
+/* Hamburger code */
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+body.no-scroll {
+      overflow: hidden;
+    }
+
+.hamburger {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 15px;
+    }
+
+.menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 250px;
+      height: 100vh;
+      background: #333;
+      padding-top: 60px;
+      transition: left 0.3s ease;
+    }
+
+.menu.active {
+      left: 0;
+    }
+
+.menu a {
+      display: block;
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+.menu a:hover {
+      background: #444;
     }
