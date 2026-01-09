@@ -1,17 +1,15 @@
-const hamburger = document.getElementById("hamburger");
-    const menu = document.getElementById("menu");
-    const links = document.querySelectorAll(".menu-link");
+ document.getElementById("myForm").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    // Toggle menu open/close
-    hamburger.addEventListener("click", () => {
-      menu.classList.toggle("active");
-      document.body.classList.toggle("no-scroll");
-    });
+      const input = document.getElementById("textInput");
+      const errorMsg = document.getElementById("errorMsg");
 
-    // Close menu on link click
-    links.forEach(link => {
-      link.addEventListener("click", () => {
-        menu.classList.remove("active");
-        document.body.classList.remove("no-scroll");
-      });
+      if (input.value.trim() === "") {
+        errorMsg.textContent = "Input cannot be empty.";
+        input.focus();
+      } else {
+        errorMsg.textContent = "";
+        alert("Submitted: " + input.value);
+        input.value = "";
+      }
     });
