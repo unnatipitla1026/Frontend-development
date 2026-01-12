@@ -7,24 +7,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navbar with hamburger -->
   <nav>
-    <ul>
-      <li class="logo">LOGO</li>
-      <div class="items">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </div>
-          <li class="search-icon">
-            <input type="search" placeholder="Search...">
-            <label for="" class="icon">
-              <span class="fas fa-search">🔍</span>
-            </label>
-          </li>
-    </ul>
+    <div class="logo"> 
+      <h1>LOGO</h1>
+    </div>
+    <ul id="menuList">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>   
+    <div class="menu-icon">
+      <button class="btn" onclick="toggleMenu()">☰</button>
+    </div>
   </nav>
 
+
+  <!-- Resuable Card Component -->
    <main id="id1">
     <h1>Frontend Internship</h1><br>
     <h2>Day-6 Task Completed</h2><br>
@@ -67,5 +68,7 @@
     </div>
   </div>
   </section>
+  
+  <script src="script.js"></script>
 </body>
 </html>
