@@ -2,39 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Day 5</title>
+  <title>Day 6</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-  <!-- Hamburger Icon -->
-  <div class="hamburger" id="hamburger">&#9776;</div>
+   <nav>
+    <ul>
+      <li class="logo">LOGO</li>
+      <div class="items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </div>
+          <li class="search-icon">
+            <input type="search" placeholder="Search...">
+            <label for="" class="icon">
+              <span class="fas fa-search">🔍</span>
+            </label>
+          </li>
+    </ul>
+  </nav>
 
-  <!-- Menu -->
-  <div class="menu" id="menu">
-    <a href="#" class="menu-link">Home</a>
-    <a href="#" class="menu-link">About</a>
-    <a href="#" class="menu-link">Features</a>
-    <a href="#" class="menu-link">Profile</a>
-    <a href="#" class="menu-link">Logout</a>
-  </div>
+   <main id="id1">
+    <h1>Frontend Internship</h1><br>
+    <h2>Day-6 Task Completed</h2><br>
+    <p>Name: <strong>Unnati</strong></p><br>
+    <p>This website is deployed using GitHub Pages.</p><br>
 
-  <!-- Day 5 -->
-  <form id="myForm">
-    <div class="input-wrapper">
-      <input 
-        type="text" 
-        id="textInput" 
-        placeholder="Enter text"
-        aria-label="Text input"
-      >
-      <button type="submit" aria-label="Submit">
-        🔍
-      </button>
+    <button class="primary-btn">Send</button>
+  </main>
+  
+  <section class="card-section">
+  <h2 class="card-title">Reusable Card Component</h2>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="https://media.licdn.com/dms/image/v2/D5612AQFfhTEictqBHA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721174916441?e=2147483647&v=beta&t=IqnGNJxS4J-yaL4rgLBlx-cbNAbFwpEMCRvkkLXsR48" alt="Card Image">
+      <div class="card-content">
+        <h3>Frontend Development</h3>
+        <p>Learn how to build modern and responsive user interfaces using HTML, CSS and JavaScript.</p>
+        <button>Explore</button>
+      </div>
     </div>
-    <div id="errorMsg" class="error"></div>
-  </form>
 
+    <div class="card">
+      <img src="https://www.datocms-assets.com/22695/1751327552-1735313241-ui-vs-ux.webp" alt="Card Image">
+      <div class="card-content">
+        <h3>UI Components</h3>
+        <p>Create reusable UI components that improve development speed and consistency.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.andacademy.com/resources/wp-content/uploads/2025/05/inner_2e.webp" alt="Card Image">
+      <div class="card-content">
+        <h3>Responsive Design</h3>
+        <p>Design layouts that work perfectly on mobile, tablet, and desktop devices.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  
   <script src="script.js"></script>
+  
 </body>
 </html>  
