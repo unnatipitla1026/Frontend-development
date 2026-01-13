@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar with hamburger -->
+  <!-- Navbar -->
   <nav>
     <div class="logo"> 
       <h1>LOGO</h1>
@@ -19,31 +19,42 @@
       <li><a href="#">Product</a></li>
       <li><a href="#">Contact</a></li>
     </ul>   
+
+    <!-- Hamburger -->
     <div class="menu-icon">
       <button class="btn" onclick="toggleMenu()">☰</button>
     </div>
   </nav>
 
-  <form class="search-bar" id="searchForm">
-      <input 
-        type="text" 
-        id="searchInput" 
-        placeholder="Search..."
-        aria-label="Search"
-      />
-      <button type="submit">🔍</button>
-  </form>
+  <!-- Searching Bar -->
+    <section class="search-section">
+      <form id="searchForm" class="search-form">
+        <input type="text" id="searchInput" placeholder="Search...">
+          <button type="submit">🔍</button>
+      </form>
+    </section>
 
-  <!-- Resuable Card Component -->
-   <main id="id1">
+    <!-- Intro -->
+   <main class="center">
     <h1>Frontend Internship</h1><br>
     <h2>Day-6 Task Completed</h2><br>
     <p>Name: <strong>Unnati</strong></p><br>
     <p>This website is deployed using GitHub Pages.</p><br>
 
     <button class="primary-btn">Send</button>
-  </main>
-  
+    <button class="primary-btn" disabled>Disabled</button>
+   </main>
+
+   <!-- === Notification banner === -->
+  <div id="notification" class="notification">
+    <span id="message"></span>
+    <button class="close-btn" onclick="hideNotification()">×</button>
+  </div>
+
+  <button class="action" onclick="showSuccess()">Show Success</button>
+  <button class="action" onclick="showError()">Show Error</button>
+
+  <!-- Resuable Card Component -->
   <section class="card-section">
   <h2 class="card-title">Reusable Card Component</h2>
 
@@ -75,7 +86,7 @@
         <button>Explore</button>
       </div>
     </div>
-  </div>
+  </div> 
   </section>
   
   <script src="script.js"></script>
