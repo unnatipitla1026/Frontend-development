@@ -10,3 +10,23 @@ function toggleMenu(){
         menuList.style.maxHeight = "0px"
     }
 }
+
+/* Notification banner */
+  const notification = document.getElementById("notification");
+    const message = document.getElementById("message");
+
+    function showSuccess() {
+      notification.className = "notification success";
+      message.textContent = "✅ Operation completed successfully!";
+      notification.style.display = "flex";
+    }
+
+    function showError() {
+      notification.className = "notification error";
+      message.textContent = "❌ Something went wrong. Please try again.";
+      notification.style.display = "flex";
+    }
+
+    function hideNotification() {
+      notification.style.display = "none";
+    }
