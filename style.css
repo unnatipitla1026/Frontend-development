@@ -239,3 +239,17 @@ button.action {
 button.action:hover{
   background: #1d4ed8;
 }
+
+button.actions {
+  padding: 10px 20px;
+  background: rgb(165, 41, 41);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+button.actions:hover{
+  background: red;
+}
