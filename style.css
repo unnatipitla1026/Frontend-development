@@ -197,7 +197,7 @@ nav ul li a{
 }
 
 button.action {
-  margin: 10px 330px;
+  margin: 10px 350px;
   padding: 10px 20px;
   background: #2563eb;
   color: white;
@@ -227,7 +227,7 @@ button.actions:hover{
 
 /* Form input & submit */
 .day8-form {
-  margin: 30px 450px;
+  margin: 30px 500px;
   padding: 20px;
   background-color: #fff;
   border-radius: 6px;
