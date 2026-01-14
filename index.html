@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day 7</title>
+  <title>Day 6</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,12 +37,9 @@
     <!-- Intro -->
    <main class="center">
     <h1>Frontend Internship</h1><br>
-    <h2>Day-7 Task Completed</h2><br>
+    <h2>Day-6 Task Completed</h2><br>
     <p>Name: <strong>Unnati</strong></p><br>
     <p>This website is deployed using GitHub Pages.</p><br>
-
-    <button class="primary-btn">Send</button>
-    <button class="primary-btn" disabled>Disabled</button>
    </main>
 
    <!-- === Notification banner === -->
@@ -53,6 +50,26 @@
 
   <button class="action" onclick="showSuccess()">Show Success</button>
   <button class="actions" onclick="showError()">Show Error</button>
+
+  <!-- Day 8 -->
+  <section class="day8-form">
+
+  <form id="contactForm">
+    <!-- Label connected to input -->
+    <label for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter your name" />
+
+    <!-- Error message -->
+    <p id="errorMsg" class="error" style="display:none">
+     This field is required
+    </p>
+
+    <!-- Submit button -->
+    <button type="submit" id="submitBtn" disabled>Submit</button>
+  </form>
+
+  <p id="successMsg" class="success"></p>
+</section>
 
   <!-- Resuable Card Component -->
   <section class="card-section">
