@@ -275,3 +275,20 @@ button.actions:hover{
   color: green;
   font-weight: bold;
 }
+
+/* Footer page */
+.footer {
+    background: navy;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    color: white;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+}
