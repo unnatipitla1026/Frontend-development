@@ -9,6 +9,7 @@
 html,body{
   height: 100%;
   width: 100%;
+  background-color: rgb(176, 216, 232);
 }
 
 nav {
@@ -291,4 +292,27 @@ button.actions:hover{
     display: block;
     margin: 5px 0;
     text-decoration: none;
+}
+
+/* GO-TO-TOP BUTTON */
+.go-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; 
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.go-to-top-btn:hover {
+  background-color: #1d4ed8;
 }
