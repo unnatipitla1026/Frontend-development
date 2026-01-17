@@ -12,23 +12,23 @@ function toggleMenu(){
 }
 
 /* Notification banner */
-  const notification = document.getElementById("notification");
-    const message = document.getElementById("message");
-
     function showSuccess() {
-      notification.className = "notification success";
-      message.textContent = "✅ Operation completed successfully!";
-      notification.style.display = "flex";
+        showNotification("✅ Action Successful!", "success");
     }
 
     function showError() {
-      notification.className = "notification error";
-      message.textContent = "❌ Something went wrong. Please try again.";
-      notification.style.display = "flex";
+        showNotification("❌ Something went wrong!", "error");
     }
 
-    function hideNotification() {
-      notification.style.display = "none";
+    function showNotification(message, type) {
+        const notification = document.getElementById("notification");
+        notification.textContent = message;
+        notification.className = "notification " + type;
+        notification.style.display = "block";
+
+        setTimeout(() => {
+            notification.style.display = "none";
+        }, 3000);
     }
 
 /* Form input & submit  */
