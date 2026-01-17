@@ -30,7 +30,7 @@
     <section class="search-section">
       <form id="searchForm" class="search-form">
         <input type="text" id="searchInput" placeholder="Search...">
-          <button type="submit">🔍</button>
+          <button type="submit">🔍︎</button>
       </form>
     </section>
 
@@ -41,13 +41,12 @@
    </main>
 
    <!-- === Notification banner === -->
-  <div id="notification" class="notification">
-    <span id="message"></span>
-    <button class="close-btn" onclick="hideNotification()">×</button>
-  </div>
+  <div class="container">
+    <button class="success-btn" onclick="showSuccess()">Show Success</button>
+    <button class="error-btn" onclick="showError()">Show Error</button>
+</div>
 
-  <button class="action" onclick="showSuccess()">Show Success</button>
-  <button class="actions" onclick="showError()">Show Error</button>
+<div id="notification" class="notification"></div>
 
   <!-- Day 8 -->
   <section class="day8-form">
