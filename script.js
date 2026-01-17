@@ -68,21 +68,19 @@ submitBtn.disabled = true;
 }
 
 // GO-TO-TOP BUTTON
-const goToTopBtn = document.getElementById("goToTopBtn");
+ const topBtn = document.getElementById("topBtn");
 
-// Show/hide button on scroll
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) { // Show after scrolling 100px
-    goToTopBtn.style.display = "block";
-  } else {
-    goToTopBtn.style.display = "none";
-  }
-});
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 200) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+    };
 
-// Smooth scroll to top on click
-goToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
+    function goToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
