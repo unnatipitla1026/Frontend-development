@@ -40,6 +40,10 @@ nav ul li a{
   color: #fff;
 }
 
+nav ul li a:hover{
+  color: #000;
+}
+
 .menu-icon{
   display: none;
 }
@@ -74,7 +78,7 @@ nav ul li a{
 
 /*Searching bar*/
 .search-section {
-    padding: 15px;
+    padding: 5px;
     background: #f4f4f4;
 }
 
