@@ -1,14 +1,20 @@
-/* Hamburger fuction */
-let menuList = document.getElementById("menuList")
-menuList.style.maxHeight = "0px";
+/* Hamburger */
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
 
-function toggleMenu(){
-    if(menuList.style.maxHeight == "0px"){
-        menuList.style.maxHeight = "300px";
+/* Pop-up Box */
+function openPopup() {
+    let value = document.getElementById("searchInput").value;
+    if(value.trim() !== "") {
+        document.getElementById("popup").style.display = "flex";
+        document.getElementById("searchText").innerText =
+            "You searched for: " + value;
     }
-    else{
-        menuList.style.maxHeight = "0px"
-    }
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
 }
 
 /* Notification banner */
