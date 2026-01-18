@@ -7,32 +7,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <div class="logo"> 
-      <h1>KINGDOM</h1>
-    </div>
-    <ul id="menuList">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Product</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>   
+ <!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">MyBrand</div>
 
-    <!-- Hamburger -->
-    <div class="menu-icon">
-      <button class="btn" onclick="toggleMenu()">☰</button>
-    </div>
-  </nav>
+    <ul class="nav-links" id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
 
-  <!-- Searching Bar -->
-    <section class="search-section">
-      <form id="searchForm" class="search-form">
-        <input type="text" id="searchInput" placeholder="Search...">
-          <button type="submit">🔍︎</button>
-      </form>
-    </section>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- SEARCH BAR -->
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search here..." required>
+        <button onclick="openPopup()">🔍︎</button>
+    </div>
+</div>
+
+<!-- POPUP -->
+<div class="modal" id="popup">
+    <div class="modal-content">
+        <span class="close" onclick="closePopup()">✖</span>
+        <h3>Search Result</h3>
+        <p id="searchText"></p>
+    </div>
+</div>
 
     <!-- Intro -->
    <main class="center">
@@ -104,22 +112,44 @@
   </section>
 
   <!-- Footer Page -->
-  <footer class="footer">
-    <div>
-        <h3>Kingdom</h3>
-        <p>Frontend Internship Program</p>
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>MyBrand</h2>
+            <p>Creating modern and responsive web designs with passion.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: info@mybrand.com</p>
+            <p>Phone: +91 90810 10417</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#">🌐</a>
+                <a href="#">📘</a>
+                <a href="#">📸</a>
+                <a href="#">🐦</a>
+            </div>
+        </div>
+
     </div>
 
-    <div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Product</a>
-        <a href="#">Contact</a>
-    </div>
-
-    <div>
-        <p>© 2026 Kingdom</p>
+    <div class="footer-bottom">
+        © 2026 MyBrand | All Rights Reserved
     </div>
 </footer>
 
