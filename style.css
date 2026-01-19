@@ -1,11 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
 }
 
-/* NAVBAR */
+/* ---------- BODY ---------- */
+body{
+  background:#f4f6fb;
+  color:#222;
+}
+
+/* ---------- NAVBAR ---------- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -137,12 +143,80 @@
     }
 }
 
-/* Intro */
-.center{
-  text-align: center;
+/* ---------- INTRO ---------- */
+.intro{
+  background:#ffffff;
+  padding:70px 20px;
+  text-align:center;
 }
 
-/* ===== Reuseable card ===== */
+.intro h1{
+  font-size:36px;
+  margin-bottom:12px;
+}
+
+.intro p{
+  max-width:600px;
+  margin:0 auto 25px;
+  color:#555;
+}
+
+/* --- NOTIFICATION BANNER --- */
+  .container {
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 25px;
+        margin: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .success-btn {
+        background-color: #28a745;
+    }
+
+    .error-btn {
+        background-color: #dc3545;
+    }
+
+    .notification {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 30px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        display: none;
+        animation: slideDown 0.4s ease;
+    }
+
+    .notification.success {
+        background-color: #28a745;
+    }
+
+    .notification.error {
+        background-color: #dc3545;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            top: 0;
+        }
+        to {
+            opacity: 1;
+            top: 20px;
+        }
+    }
+
+/* ---------- RESUSABLE CARD ---------- */
 .card-section {
   padding: 40px;
 }
@@ -204,95 +278,40 @@
   background-color: #0056b3;
 }
 
- 
-/* === Notification Banner === */
- .container {
-        text-align: center;
-    }
+/* ---------- FORM SECTION ---------- */
+.form-section{
+  background:#fff;
+  padding:20px 20px;
+  margin:40px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  text-align:center;
+}
 
-    button {
-        padding: 12px 25px;
-        margin: 10px;
-        font-size: 16px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        color: #fff;
-    }
+.form-box{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:20px;
+}
 
-    .success-btn {
-        background-color: #28a745;
-    }
+.form-box input{
+  width:180px;
+  padding:8px 10px;
+  border-radius:8px;
+  border:1px solid #215ee3;
+}
 
-    .error-btn {
-        background-color: #dc3545;
-    }
+.form-box button{
+  padding:8px 16px;
+  border:none;
+  border-radius:8px;
+  background: linear-gradient(135deg,#2563eb, #0f172a);
+  color:#fff;
+  cursor:pointer;
+}
 
-    .notification {
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 15px 30px;
-        border-radius: 6px;
-        color: #fff;
-        font-size: 16px;
-        display: none;
-        animation: slideDown 0.4s ease;
-    }
-
-    .notification.success {
-        background-color: #28a745;
-    }
-
-    .notification.error {
-        background-color: #dc3545;
-    }
-
-    @keyframes slideDown {
-        from {
-            opacity: 0;
-            top: 0;
-        }
-        to {
-            opacity: 1;
-            top: 20px;
-        }
-    }
-
-/* === Form input & submit === */
-.small-form{
-     text-align: center;
-    justify-content: center;
-    padding:15px 20px;
-    border-radius:8px;
-  }
-
-  .small-form input{
-    width:180px;
-    padding:6px 8px;
-    font-size:13px;
-    border:1px solid #ccc;
-    border-radius:6px;
-    outline:none;
-  }
-
-  .small-form button{
-    padding:6px 14px;
-    margin-left:6px;
-    font-size:13px;
-    border:none;
-    border-radius:6px;
-    background: linear-gradient(135deg,#2563eb, #0f172a);
-    color:white;
-    cursor:pointer;
-  }
-
-  .small-form button:hover{
-    background: linear-gradient(135deg,#2563eb, #0f172a);
-  }
-
-/* Footer page */
+/* ---------- FOOTER ---------- */
 .footer {
     background: linear-gradient(135deg, #0f172a, #2563eb);
     color: #e5e7eb;
@@ -339,7 +358,6 @@
     padding-left: 5px;
 }
 
-/* SOCIAL ICONS */
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -360,7 +378,6 @@
     transform: translateY(-3px);
 }
 
-/* BOTTOM */
 .footer-bottom {
     text-align: center;
     padding: 15px;
@@ -370,15 +387,35 @@
     color: #c7d2fe;
 }
 
-/* RESPONSIVE */
 @media (max-width: 600px) {
     .footer-container {
         text-align: center;
     }
 }
 
+@media(max-width:768px){
+  .feature-grid{
+    grid-template-columns:1fr;
+  }
+
+  .form-box{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .form-box input,
+  .form-box button{
+    width:100%;
+    max-width:260px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+}
+
 /* GO-TO-TOP BUTTON */
-  #topBtn {
+    #topBtn {
         display: none;
         position: fixed;
         bottom: 30px;
