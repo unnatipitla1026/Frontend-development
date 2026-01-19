@@ -56,25 +56,14 @@
 
 <div id="notification" class="notification"></div>
 
-  <!-- Day 8 -->
-  <section class="day8-form">
-
-  <form id="contactForm">
-    <!-- Label connected to input -->
-    <label for="username">Username</label>
-    <input type="text" id="username" placeholder="Enter your name" />
-
-    <!-- Error message -->
-    <p id="errorMsg" class="error" style="display:none">
-     This field is required
-    </p>
-
-    <!-- Submit button -->
-    <button type="submit" id="submitBtn" disabled>Submit</button>
-  </form>
-
-  <p id="successMsg" class="success"></p>
-</section>
+  <!-- Form Input and submit -->
+  <div class="form-box">
+    <form onsubmit="showPopup(event)">
+        <input type="text" placeholder="Enter your name" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
   <!-- Resuable Card Component -->
   <section class="card-section">
