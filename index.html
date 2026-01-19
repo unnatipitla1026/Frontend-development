@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <!-- NAVBAR -->
+<!-- NAVBAR -->
 <nav class="navbar">
     <div class="logo">MyBrand</div>
 
@@ -18,6 +18,8 @@
         <li><a href="#">Contact</a></li>
     </ul>
 
+
+  <!-- HAMBURGER -->
     <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -32,8 +34,6 @@
         <button onclick="openPopup()">🔍︎</button>
     </div>
 </div>
-
-<!-- POPUP -->
 <div class="modal" id="popup">
     <div class="modal-content">
         <span class="close" onclick="closePopup()">✖</span>
@@ -42,27 +42,21 @@
     </div>
 </div>
 
-    <!-- Intro -->
-   <main class="center">
-    <h1>Frontend Internship</h1><br>
-    <h2>Task Completed</h2><br>
-   </main>
-
-   <!-- === Notification banner === -->
+<!-- INTRO -->
+<section class="intro">
+  <h1>Frontend Internship</h1>
+  <p>This page demonstrates a static website rebuild using clean layout, components, and responsive design.</p>
+    
+  <!-- NOTIFICATION BANNER-->
   <div class="container">
     <button class="success-btn" onclick="showSuccess()">Show Success</button>
     <button class="error-btn" onclick="showError()">Show Error</button>
-</div>
+  </div>
 
-<div id="notification" class="notification"></div><br>
+<div id="notification" class="notification"></div>
+</section>
 
-  <!-- Form Input and submit -->
-<form class="small-form" onsubmit="showPopup(event)">
-  <input type="text" placeholder="Your name" required>
-  <button type="submit">Submit</button>
-</form>
-
-  <!-- Resuable Card Component -->
+<!-- RESUSABLE CARD SECTION-->
   <section class="card-section">
   <h2 class="card-title">Reusable Card Component</h2>
 
@@ -97,7 +91,16 @@
   </div> 
   </section>
 
-  <!-- Footer Page -->
+<!-- FORM -->
+<section class="form-section">
+  <h2>Simple Form</h2>
+  <div class="form-box">
+    <input type="text" placeholder="Your name" required>
+    <button onclick="submitForm()">Submit</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
     <footer class="footer">
     <div class="footer-container">
 
@@ -140,8 +143,7 @@
 </footer>
 
 <!-- Go-to-Top Button -->
-  <button id="topBtn" onclick="goToTop()">↑</button>
-  
+  <button id="topBtn" onclick="goToTop()">↑</button>  
   <script src="script.js"></script>
 </body>
 </html>
