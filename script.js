@@ -13,13 +13,9 @@ function openPopup() {
     }
 }
 
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-}
-
 /* Notification banner */
-    function showSuccess() {
-        showNotification("✅ Action Successful!", "success");
+  function showSuccess() {
+        showNotification("✅ Done! Everything went smoothly.", "success");
     }
 
     function showError() {
@@ -37,11 +33,10 @@ function closePopup() {
         }, 3000);
     }
 
-/* Form input & submit  */
- function showPopup(e){
-    e.preventDefault();
-    alert("✅ Submitted Successfully!");
-  }
+/* FORM SUBMIT */
+function submitForm(){
+  alert("Form submitted successfully!");
+}    
 
 // GO-TO-TOP BUTTON
  const topBtn = document.getElementById("topBtn");
