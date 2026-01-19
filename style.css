@@ -261,43 +261,36 @@
     }
 
 /* === Form input & submit === */
-    .form-box{
-        margin: 0 400px 0 400px;
-        background:#fff;
-        padding:30px;
-        border-radius:12px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.2);
-        text-align:center;
-    }
+.small-form{
+     text-align: center;
+    justify-content: center;
+    padding:15px 20px;
+    border-radius:8px;
+  }
 
-    .form-box input{
-        width:250px;
-        padding:10px;
-        border-radius:8px;
-        border:1px solid #ccc;
-        outline:none;
-        margin-bottom:15px;
-        font-size:15px;
-    }
+  .small-form input{
+    width:180px;
+    padding:6px 8px;
+    font-size:13px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+  }
 
-    /* .form-box input:focus{
-        border-color:#667eea;
-    } */
+  .small-form button{
+    padding:6px 14px;
+    margin-left:6px;
+    font-size:13px;
+    border:none;
+    border-radius:6px;
+    background: linear-gradient(135deg,#2563eb, #0f172a);
+    color:white;
+    cursor:pointer;
+  }
 
-    .form-box button{
-        padding:10px 25px;
-        border:none;
-        border-radius:8px;
-        background: linear-gradient(135deg,#2563eb, #0f172a);
-        color:white;
-        font-size:15px;
-        cursor:pointer;
-        transition:0.3s;
-    }
-
-    .form-box button:hover{
-        background: linear-gradient(135deg,#2563eb, #0f172a);
-    }
+  .small-form button:hover{
+    background: linear-gradient(135deg,#2563eb, #0f172a);
+  }
 
 /* Footer page */
 .footer {
