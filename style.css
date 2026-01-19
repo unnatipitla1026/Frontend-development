@@ -262,6 +262,7 @@
 
 /* === Form input & submit === */
     .form-box{
+        margin: 0 400px 0 400px;
         background:#fff;
         padding:30px;
         border-radius:12px;
