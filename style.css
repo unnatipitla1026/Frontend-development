@@ -260,56 +260,43 @@
         }
     }
 
-/* Form input & submit */
-.day8-form {
-  margin: 30px 100px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 6px;
-  max-width: 400px;
-  background: rgb(223, 217, 217);
-}
+/* === Form input & submit === */
+    .form-box{
+        background:#fff;
+        padding:30px;
+        border-radius:12px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        text-align:center;
+    }
 
-.day8-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+    .form-box input{
+        width:250px;
+        padding:10px;
+        border-radius:8px;
+        border:1px solid #ccc;
+        outline:none;
+        margin-bottom:15px;
+        font-size:15px;
+    }
 
-.day8-form input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+    .form-box input:focus{
+        border-color:#667eea;
+    }
 
-.day8-form .error {
-  color: red;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
+    .form-box button{
+        padding:10px 25px;
+        border:none;
+        border-radius:8px;
+        background:#667eea;
+        color:white;
+        font-size:15px;
+        cursor:pointer;
+        transition:0.3s;
+    }
 
-.day8-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.day8-form button:disabled {
-  background-color: #aaa;
-  cursor: not-allowed;
-}
-
-.day8-form .success {
-  margin-top: 10px;
-  color: green;
-  font-weight: bold;
-}
+    .form-box button:hover{
+        background:#5a67d8;
+    }
 
 /* Footer page */
 .footer {
