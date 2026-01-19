@@ -38,10 +38,10 @@ function closePopup() {
     }
 
 /* Form input & submit  */
-function showPopup(event){
-        event.preventDefault(); // page reload stop
-        alert("✅ Form Submitted Successfully!");
-    }
+ function showPopup(e){
+    e.preventDefault();
+    alert("✅ Submitted Successfully!");
+  }
 
 // GO-TO-TOP BUTTON
  const topBtn = document.getElementById("topBtn");
