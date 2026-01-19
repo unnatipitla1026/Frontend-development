@@ -262,7 +262,7 @@
 
 /* === Form input & submit === */
     .form-box{
-        margin: 0 400px 0 400px;
+        margin: 0 500px 0 500px;
         background:#fff;
         padding:30px;
         border-radius:12px;
@@ -280,15 +280,15 @@
         font-size:15px;
     }
 
-    .form-box input:focus{
+    /* .form-box input:focus{
         border-color:#667eea;
-    }
+    } */
 
     .form-box button{
         padding:10px 25px;
         border:none;
         border-radius:8px;
-        background:#667eea;
+        background: linear-gradient(135deg,#2563eb, #0f172a);
         color:white;
         font-size:15px;
         cursor:pointer;
@@ -296,7 +296,7 @@
     }
 
     .form-box button:hover{
-        background:#5a67d8;
+        background: linear-gradient(135deg,#2563eb, #0f172a);
     }
 
 /* Footer page */
